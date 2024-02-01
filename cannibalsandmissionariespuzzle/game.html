@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Misioneros & Canibales</title>
+	<link rel="icon" type="image/icon" href="image/futuroicono.ico">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="Header">
+			<img src="image/logocult.png" class="logo" alt="">
+			<!--<input type="checkbox" id ="menu"/>-->
+			<label for="menu">
+			</label>
+			<ul class="menu">
+				<li class="item">Tiempo:</li>
+				<li id="timer">0</li>
+				<li class="item" >Contador</li>
+				<li id="cont">0</li>
+
+				<li class="item">Grupo</li>
+				<li class="item">Diseño</li>
+				<li class="btn">Reglas</li>
+			</ul>
+	</header>
+
+	<div id ="game">
+		<img src="image/balsaa.webp" id="boat" class="image" style="left: 680px;">
+		<img src="image/birds.gif" id="birds" height="100" />
+		<img class="image" src="image/Heket-animation.gif" id="m3" onclick="on_click(this.id)" />
+		<img class="image" src="image/Shamura-animation-brain.gif" id="m2" onclick="on_click(this.id)" />
+		<img class="image" src="image/Kallamar-animation.gif" id="m1" onclick="on_click(this.id)" />
+		<img class="image2" src="image/buen2.gif" id="p3" onclick="on_click(this.id)" />
+		<img class="image2" src="image/buen3.webp" id="p2" onclick="on_click(this.id)" />
+		<img class="image3" src="image/El_Cordero_291.webp" id="p1"  onclick="on_click(this.id)" />
+
+		
+		<div id="game_over" style="visibility: hidden;">
+			<a href="game.html">
+			<img src="image/Main_menu-animation.gif" class="game_over" id="game_op"/>
+			<h2 id="item">REINICIAR</h2>
+			</a>
+		</div>
+<!---EDICION-->
+<button class="c-button c-button--gooey"  onclick="dfs()" style="top:740px;left:300px;">
+	Resolver por BFS
+	 <div class="c-button__blobs">
+	   <div></div>
+	   <div></div>
+	   <div></div>
+	 </div>
+   </button>
+<button class="c-button c-button--gooey" onclick="move_button()" style="top:740px;left:400px;">
+	Mueve el Bote
+	 <div class="c-button__blobs">
+	   <div></div>
+	   <div></div>
+	   <div></div>
+	 </div>
+   </button>
+
+
+
+   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+	<defs>
+	  <filter id="goo">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+		<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+		<feBlend in="SourceGraphic" in2="goo"></feBlend>
+	  </filter>
+	</defs>
+  </svg>
+  
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/dfs.js"></script>
+
+	
+
+</body>
+</html>

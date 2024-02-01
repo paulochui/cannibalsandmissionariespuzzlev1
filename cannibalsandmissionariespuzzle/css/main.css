@@ -1,0 +1,240 @@
+* {
+list-style: none;
+box-sizing: border-box;
+}
+body {
+	margin: 0px!important;
+	padding: 0px!important;
+	font-family: 'Rubik', sans-serif;
+	background-image: url("../image/Cult-of-the-lamb-game.webp");
+}
+Header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5px;
+	height:70px;
+	
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px ;
+	backdrop-filter: blur(1px);
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item {
+	margin: 0 15px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	color: white;
+}
+#cont{
+	color: white;
+}
+.item:hover{
+	color: #da5051;
+}
+label{
+	cursor: pointer;
+	display: none;	
+}
+.logo{
+	height: 50px;
+}
+
+.btn{
+	padding: 10px 24px;
+	border-radius: 30px;
+	background-color: #da5051;
+	color: #fdefd4;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: #d90f42;
+	
+}
+/*
+.header{
+	text-align: center;
+	align-items: center;
+	font-size: 25px;
+	display: flex;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.2);
+	////////////////background-color: #c3ba99;
+	border-radius: 10px ;
+	backdrop-filter: blur(1px);
+
+	height: 50px;
+	box-shadow: 5px 5px 5px black;
+}
+
+#conteiner{
+	background: rgba(255, 255, 255, 0.2);
+}
+*/
+h2 {
+	margin: auto;
+}
+#game {
+	display: inline-block;
+	width: 1200px; /*1300*/
+    height: 830px; /*620*/
+	margin-top: 70px;
+	background-image: url("../image/pix13.jpg");
+	background-repeat: no-repeat;;
+	background-position: center;
+	background-size: cover;
+	border: 10px solid #1E381F;
+}
+.image {
+	position: absolute;
+	width: 80px;
+	top: 440px;
+    height: 170px;
+    transition: left 0.1s;
+}
+.image:hover {
+	width: 90px;
+	height: 180px;
+}
+.image2 {
+	position: absolute;
+	width: 60px;
+	top: 510px;
+    height: 100px;
+    transition: left 0.1s;
+}
+.image3 {
+	position: absolute;
+	width: 70px;
+	top: 510px;
+    height: 110px;
+    transition: left 0.1s;
+}
+.image3:hover {
+	width: 80px;
+	height: 120px;
+}
+.image2:hover {
+	width: 70px;
+	height: 110px;
+}
+
+#boat {
+	width: 200px;
+	height: 150px;
+    top: 550px;
+    transition: left 0.1s;
+}
+
+#game_over {
+	display: block;
+	background-color: white;
+	width: 557PX; /*557*/
+    position: absolute;
+    top: 90px; /*180*/
+    left: 350px;/*415*/
+    height: 550px;  /*343*/
+    border: 10px solid #1E381F;
+    border-radius: 5%;
+	text-align: center;
+}
+#game_op{
+	height: 400px;
+}
+a {
+	font-weight: bolder;
+	text-decoration :none;	
+	font-size: 50px;
+    
+    
+}
+a:hover{
+	text-shadow: 2px 2px 2px gray;
+	font-weight: bolder;
+	color: red;
+}
+
+
+/*EDIUCIONES*/
+.c-button {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 1em 2em;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	background-color: #c3ba99;
+	border: none;
+  }
+  
+  .c-button--gooey {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 0;
+	position: relative;
+	transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+	height: 100%;
+	filter: url(#goo);
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: -3px;
+	right: -1px;
+	z-index: -1;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+	background-color: #da5051;
+	width: 34%;
+	height: 100%;
+	border-radius: 100%;
+	position: absolute;
+	transform: scale(1.4) translateY(-125%) translateZ(0);
+	transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+	left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+	left: 30%;
+	transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+	left: 66%;
+	transition-delay: 25ms;
+  }
+  
+  /* Hover styles */
+  .c-button--gooey:hover {
+	color: #121112;
+	background-color: #ffffff;
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+	transform: scale(1.4) translateY(0) translateZ(0);
+  }
+
+
+  
